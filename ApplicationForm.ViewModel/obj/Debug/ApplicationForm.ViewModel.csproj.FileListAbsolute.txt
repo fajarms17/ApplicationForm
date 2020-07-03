@@ -1,0 +1,5 @@
+D:\New folder\Job\xsis\belajar\ApplicationForm\ApplicationForm.ViewModel\bin\Debug\ApplicationForm.ViewModel.dll
+D:\New folder\Job\xsis\belajar\ApplicationForm\ApplicationForm.ViewModel\bin\Debug\ApplicationForm.ViewModel.pdb
+D:\New folder\Job\xsis\belajar\ApplicationForm\ApplicationForm.ViewModel\obj\Debug\ApplicationForm.ViewModel.csprojAssemblyReference.cache
+D:\New folder\Job\xsis\belajar\ApplicationForm\ApplicationForm.ViewModel\obj\Debug\ApplicationForm.ViewModel.dll
+D:\New folder\Job\xsis\belajar\ApplicationForm\ApplicationForm.ViewModel\obj\Debug\ApplicationForm.ViewModel.pdb

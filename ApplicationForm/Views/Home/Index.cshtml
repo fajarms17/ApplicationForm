@@ -1,0 +1,182 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@model ApplicationForm.ViewModel.ApplicationViewModel
+@using (Html.BeginForm("Create", "Home", FormMethod.Post, new { id = "form-create", name = "form-create" }))
+{
+    @Html.AntiForgeryToken()
+    <style>
+        #Name{
+            display:inline
+        }
+        #Mobile_phone_number{
+            display:inline
+        }
+        #Alternative_phone_number{
+            display:inline
+        }
+        .baris{
+            padding-top:7px
+        }
+    </style>
+    <div class="jumbotron">
+        <h1>ASP.NET</h1>
+        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+        <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Application Form</h3>
+        </div>
+        <div class="panel-body">
+            <div class="row baris">
+                <div class="col-sm-4">
+                    Name : <strong class="text-danger">*</strong>
+                </div>
+                <div class="col-sm-7">
+                    @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                </div>
+            </div>
+
+            <div class="row baris">
+                <div class="col-sm-4">
+                    Mobile Phone Number : <strong class="text-danger">*</strong>
+                </div>
+                <div class="col-sm-7">
+                    @Html.EditorFor(model => model.Mobile_phone_number, new { htmlAttributes = new { @class = "form-control" } })
+                </div>
+            </div>
+
+            <div class="row baris">
+                <div class="col-sm-4">
+                    Alternative Phone Number :
+                </div>
+                <div class="col-sm-7">
+                    @Html.EditorFor(model => model.Alternative_phone_number, new { htmlAttributes = new { @class = "form-control" } })
+                </div>
+            </div>
+
+            <div class="row baris">
+                <div class="col-sm-4">
+                    Email : <strong class="text-danger">*</strong>
+                </div>
+                <div class="col-sm-7">
+                    @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                </div>
+            </div>
+
+            <div class="row baris">
+                <div class="col-sm-4">
+                    Place of Birth : <strong class="text-danger">*</strong>
+                </div>
+                <div class="col-sm-7">
+                    @Html.EditorFor(model => model.Place_of_birth, new { htmlAttributes = new { @class = "form-control" } })
+                </div>
+            </div>
+
+            <div class="row baris">
+                <div class="col-sm-4">
+                    Date of Birth : <strong class="text-danger">*</strong>
+                </div>
+                <div class="col-sm-7">
+                    @Html.EditorFor(model => model.Date_of_birth, new { htmlAttributes = new { @class = "form-control", @type = "date" } })
+                </div>
+            </div>
+
+            <div class="row baris">
+                <div class="col-sm-4">
+                    Last of Education : <strong class="text-danger">*</strong>
+                </div>
+                <div class="col-sm-7">
+                    <select id="Last_education" class="form-control">
+                        <option value="x">--Choose--</option>
+                        <option value="S2/S3">S2/S3</option>
+                        <option value="S1/D4">S1/D4</option>
+                        <option value="D3">D3</option>
+                        <option value="SMU/SMK">SMU/SMK</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row baris">
+                <div class="col-sm-4">
+                    College/University : <strong class="text-danger">*</strong>
+                </div>
+                <div class="col-sm-7">
+                    @Html.EditorFor(model => model.College, new { htmlAttributes = new { @class = "form-control" } })
+                </div>
+            </div>
+
+            <div class="row baris">
+                <div class="col-sm-4">
+                    Major : <strong class="text-danger">*</strong>
+                </div>
+                <div class="col-sm-7">
+                    @Html.EditorFor(model => model.Major, new { htmlAttributes = new { @class = "form-control" } })
+                </div>
+            </div>
+
+            <div class="row baris">
+                <div class="col-sm-4">
+                    Position Apply : <strong class="text-danger">*</strong>
+                </div>
+                <div class="col-sm-7">
+                    @Html.EditorFor(model => model.Position_apply, new { htmlAttributes = new { @class = "form-control" } })
+                </div>
+            </div>
+
+            <div class="row baris">
+                <div class="col-sm-4">
+                    How did you come to know of this vacancy ?
+                </div>
+
+            </div>
+
+            <div class="row baris">
+                <div class="col-sm-4">
+                    Source : <strong class="text-danger">*</strong>
+                </div>
+                <div class="col-sm-7">
+                    <select id="Source" class="form-control">
+                        <option value="x" onclick="myFunction()">--Choose--</option>
+                        <option value="Event">Event</option>
+                        <option value="S1/D4">Career Center</option>
+                        <option value="D3">Referral Program</option>
+                        
+                    </select>
+                </div>
+
+               
+            </div>
+
+            <div class="row baris hidden event">
+                <div class="col-sm-4">
+                    Event : *
+                </div>
+                <div class="col-sm-7">
+                    @Html.EditorFor(model => model.Event, new { htmlAttributes = new { @class = "form-control" } })
+                </div>
+            </div>
+
+            <div class="row baris">
+                <div class="col-sm-6">
+                    <button type="button" class="btn btn-default btn-reset">Reset</button>
+                    <input type="submit" value="Submit" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<script>
+    function myFunction() {
+         var x = document.getElementByClass("event");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+    
+</script>

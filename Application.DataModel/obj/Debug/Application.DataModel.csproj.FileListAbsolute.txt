@@ -1,0 +1,11 @@
+D:\New folder\Job\xsis\belajar\ApplicationForm\Application.DataModel\bin\Debug\Application.DataModel.dll.config
+D:\New folder\Job\xsis\belajar\ApplicationForm\Application.DataModel\bin\Debug\Application.DataModel.dll
+D:\New folder\Job\xsis\belajar\ApplicationForm\Application.DataModel\bin\Debug\Application.DataModel.pdb
+D:\New folder\Job\xsis\belajar\ApplicationForm\Application.DataModel\bin\Debug\EntityFramework.dll
+D:\New folder\Job\xsis\belajar\ApplicationForm\Application.DataModel\bin\Debug\EntityFramework.SqlServer.dll
+D:\New folder\Job\xsis\belajar\ApplicationForm\Application.DataModel\bin\Debug\EntityFramework.xml
+D:\New folder\Job\xsis\belajar\ApplicationForm\Application.DataModel\bin\Debug\EntityFramework.SqlServer.xml
+D:\New folder\Job\xsis\belajar\ApplicationForm\Application.DataModel\obj\Debug\Application.DataModel.csprojAssemblyReference.cache
+D:\New folder\Job\xsis\belajar\ApplicationForm\Application.DataModel\obj\Debug\Application.DataModel.csproj.CopyComplete
+D:\New folder\Job\xsis\belajar\ApplicationForm\Application.DataModel\obj\Debug\Application.DataModel.dll
+D:\New folder\Job\xsis\belajar\ApplicationForm\Application.DataModel\obj\Debug\Application.DataModel.pdb
